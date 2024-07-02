@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sesiones o sistema de login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #202d2d;
+        }
+
+        .navbar-nav a {
+            color: white;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #007bff;
+        }
+
+        .content {
+            padding-top: 60px;
+            height: calc(100vh - 60px);
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0a1112;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nav-bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/logueo_war_exploded/ServletLogin">
+            <img src="imagenes/home.png" alt="Home" height="24">
+        </a>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="content d-flex flex-column align-items-center justify-content-center">
+    <div class="mb-4">
+        <img src="imagenes/logo.png" alt="Logo" class="img-fluid" style="height: 200px;">
+    </div>
+    <div class="d-flex justify-content-around w-100">
+        <div class="card mx-2">
+            <a href="/logueo_war_exploded/productos">
+                <button type="submit" class="btn btn-dark btn-block">
+                    <h3>Productos</h3>
+                </button>
+            </a>
+        </div>
+        <div class="card mx-2">
+            <a href="/logueo_war_exploded/ServletLogin">
+                <button type="submit" class="btn btn-dark btn-block">
+                    <h3>Logueo</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
